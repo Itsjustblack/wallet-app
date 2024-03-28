@@ -4,6 +4,7 @@ export default {
 	theme: {
 		fontFamily: {
 			monda: ["Monda", "sans-serif"],
+			cabinet: ["Cabinet Grotesk", "sans-serif"],
 		},
 		extend: {},
 	},

@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="2chevron-right" clip-path="url(#clip0_52_611)">
+<g id="Page 1">
+<g id="icon set">
+<g id="2chevron right">
+<g id="arrow">
+<path d="M14.312 7.5L18.5 11.8889L14.312 16.2778" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.312 7.5L18.5 11.8889L14.312 16.2778" stroke="url(#paint0_linear_52_611)" stroke-opacity="0.22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="arrow_2">
+<path d="M8.7563 7.5L12.9443 11.8889L8.7563 16.2778" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.7563 7.5L12.9443 11.8889L8.7563 16.2778" stroke="url(#paint1_linear_52_611)" stroke-opacity="0.22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_52_611" x1="13.8989" y1="16.8902" x2="19.2338" y2="16.9181" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F58218"/>
+<stop offset="1" stop-color="#1087D0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_52_611" x1="8.3432" y1="16.8902" x2="13.6782" y2="16.9181" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F58218"/>
+<stop offset="1" stop-color="#1087D0"/>
+</linearGradient>
+<clipPath id="clip0_52_611">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
