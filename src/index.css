@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-gradient {
+	background: linear-gradient(
+		181deg,
+		#255a8b -5.38%,
+		#8930b2 52.66%,
+		rgba(115, 78, 207, 0.87) 85.6%,
+		rgba(115, 87, 186, 0.87) 104.34%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
