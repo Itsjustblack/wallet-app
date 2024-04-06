@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Remove Input Styles */
+button:hover,
+button:focus {
+	outline: none;
+}
+
+input:hover,
+input:focus,
+input:active {
+	outline: none;
+}
+
+textarea {
+	overflow: auto;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	resize: none; /*remove the resize handle on the bottom right*/
+}
 
 .custom-gradient {
 	background: linear-gradient(
@@ -36,3 +58,7 @@
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
+/* 
+.test {
+	color: #0601b426;
+} */

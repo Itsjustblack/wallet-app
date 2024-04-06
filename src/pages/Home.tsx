@@ -1,9 +1,11 @@
 import Container from "@components/container";
+import PageContainer from "@components/pageContainer";
 import Transactions from "@components/transactions";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
-		<>
+		<PageContainer>
 			<Container className="my-10 mb-20 font-monda">
 				<header>
 					<div className="flex justify-between">
@@ -13,10 +15,12 @@ const Home = () => {
 								src="/assets/icons/hamburger-menu.svg"
 								alt=""
 							/>
-							<img
-								src="/assets/images/user-profile.png"
-								alt=""
-							/>
+							<Link to="/profile">
+								<img
+									src="/assets/images/user-profile.png"
+									alt=""
+								/>
+							</Link>
 						</div>
 					</div>
 					<h1 className="text-[#333A45] text-2xl tracking-[-0.48px] font-bold">
@@ -54,7 +58,7 @@ const Home = () => {
 					<Transactions />
 				</section>
 			</Container>
-		</>
+		</PageContainer>
 	);
 };
 

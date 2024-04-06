@@ -1,8 +1,8 @@
 import { createPortal } from "react-dom";
 
-const MobileNav = () => {
+const HoverNav = () => {
 	return createPortal(
-		<div className="fixed w-full bottom-6">
+		<div className="fixed w-full bottom-4">
 			<div className="flex w-[60%] mx-auto justify-around px-5 py-3 rounded-2xl glass">
 				<img
 					className="w-6 h-6 object-contain"
@@ -20,4 +20,4 @@ const MobileNav = () => {
 	);
 };
 
-export default MobileNav;
+export default HoverNav;

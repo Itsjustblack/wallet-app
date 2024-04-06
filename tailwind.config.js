@@ -5,6 +5,7 @@ export default {
 		fontFamily: {
 			monda: ["Monda", "sans-serif"],
 			cabinet: ["Cabinet Grotesk", "sans-serif"],
+			dmSans: ["DM Sans", "sans-serif"],
 		},
 		extend: {},
 	},

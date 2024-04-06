@@ -7,16 +7,19 @@ const Transactions = () => {
 					Latest transactions
 				</h3>
 				<img
-					src="/assets/icons/chevron-right.svg"
+					src="/assets/icons/chevron-right-double.svg"
 					alt=""
 				/>
 			</div>
 			<div className="mt-[50px] flex flex-col gap-y-7">
-				{transactions.map(() => (
-					<div className="flex justify-between">
+				{transactions.map((key) => (
+					<div
+						key={key}
+						className="flex justify-between"
+					>
 						<div className="flex items-center">
 							<img
-								src="/public/assets/images/user-profile2.png"
+								src="/assets/images/user-profile2.png"
 								alt=""
 							/>
 							<div className="font-cabinet ml-3">
