@@ -4,6 +4,12 @@ import { useState } from "react";
 
 const DropDown = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [currentValue, setCurrentValue] = useState<null | string>();
+
+	const selectValue = (value: "male" | "female") => {
+		setCurrentValue(value);
+		setIsOpen(false);
+	};
 	return (
 		<div>
 			<button
@@ -11,7 +17,7 @@ const DropDown = () => {
 				className="text-[#555] focus:outline-none text-xs text-center inline-flex items-center justify-between w-full py-[18px] px-4 border-b border-[#E8E8E8]"
 				type="button"
 			>
-				Select your gender
+				{currentValue || "Select your gender"}
 				<img
 					src="/assets/icons/chevron-down.svg"
 					alt=""
@@ -32,12 +38,18 @@ const DropDown = () => {
 							aria-labelledby="dropdownDefaultButton"
 						>
 							<li>
-								<a className="block cursor-pointer px-4 py-2 hover:bg-gray-100">
+								<a
+									onClick={() => selectValue("male")}
+									className="block cursor-pointer px-4 py-2 hover:bg-gray-100"
+								>
 									Male
 								</a>
 							</li>
 							<li>
-								<a className="block cursor-pointer px-4 py-2 hover:bg-gray-100">
+								<a
+									onClick={() => selectValue("female")}
+									className="block cursor-pointer px-4 py-2 hover:bg-gray-100"
+								>
 									Female
 								</a>
 							</li>

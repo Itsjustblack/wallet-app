@@ -7,9 +7,17 @@ const Profile = () => {
 		<PageContainer>
 			<Container className="my-10 mb-20 font-dmSans">
 				<header>
-					<h2 className="text-[#181D27] font-bold text-2xl tracking-[0.073px] font-monda">
-						Profile
-					</h2>
+					<div className="flex items-center justify-start mb-10">
+						<Link to="/">
+							<img
+								src="/assets/icons/arrow-left.svg"
+								alt=""
+							/>
+						</Link>
+						<h2 className="text-[#181D27] font-bold text-sm tracking-[0.073px] mx-auto">
+							Profile
+						</h2>
+					</div>
 					<div className="shadow-md mt-2 bg-[#8930B2] flex justify-between items-center h-[89px] px-4 rounded-md">
 						<div className="flex gap-x-3 items-center">
 							<div className="bg-white h-[57px] p-[2px] rounded-full">
