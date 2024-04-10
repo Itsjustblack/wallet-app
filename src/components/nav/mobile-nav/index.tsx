@@ -35,7 +35,7 @@ const MobileNav = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
-					className="absolute w-full h-full grid grid-cols-[60vw_auto] z-10"
+					className="absolute w-full h-full grid grid-cols-[75vw_auto] z-10"
 				>
 					<nav className="w-full bg-white h-full py-8 px-5 z-10">
 						<div className="flex justify-center gap-x-6 items-center">

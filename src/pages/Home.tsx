@@ -21,17 +21,17 @@ const Home = () => {
 					<div className="flex justify-between">
 						<span className="tracking-[-0.26px]">Welcome Back</span>
 						<div className="flex gap-x-6">
-							<img
-								onClick={() => toggleMenu()}
-								src="/assets/icons/hamburger-menu.svg"
-								alt=""
-							/>
 							<Link to="/profile">
 								<img
 									src="/assets/images/user-profile.png"
 									alt=""
 								/>
 							</Link>
+							<img
+								onClick={() => toggleMenu()}
+								src="/assets/icons/hamburger-menu.svg"
+								alt=""
+							/>
 						</div>
 					</div>
 					<h1 className="text-[#333A45] text-2xl tracking-[-0.48px] font-bold">
