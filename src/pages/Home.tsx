@@ -2,16 +2,27 @@ import Container from "@components/container";
 import PageContainer from "@components/pageContainer";
 import Transactions from "@components/transactions";
 import { Link } from "react-router-dom";
+import MobileNav from "@components/nav/mobile-nav";
+import classNames from "classnames";
+import { useMobileMenuStore } from "@store/mobileMenu";
 
 const Home = () => {
+	const toggleMenu = useMobileMenuStore((s) => s.toggleMenu);
+	const isOpen = useMobileMenuStore((s) => s.isOpen);
 	return (
-		<PageContainer>
-			<Container className="my-10 mb-20 font-monda">
+		<PageContainer
+			className={classNames("relative", {
+				"overflow-hidden h-[120vh]": isOpen,
+			})}
+		>
+			<MobileNav />
+			<Container className="py-10 pb-20 font-monda">
 				<header>
 					<div className="flex justify-between">
 						<span className="tracking-[-0.26px]">Welcome Back</span>
 						<div className="flex gap-x-6">
 							<img
+								onClick={() => toggleMenu()}
 								src="/assets/icons/hamburger-menu.svg"
 								alt=""
 							/>

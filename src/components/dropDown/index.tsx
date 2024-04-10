@@ -6,7 +6,7 @@ const DropDown = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [currentValue, setCurrentValue] = useState<null | string>();
 
-	const selectValue = (value: "male" | "female") => {
+	const selectValue = (value: "Male" | "Female") => {
 		setCurrentValue(value);
 		setIsOpen(false);
 	};
@@ -39,7 +39,7 @@ const DropDown = () => {
 						>
 							<li>
 								<a
-									onClick={() => selectValue("male")}
+									onClick={() => selectValue("Male")}
 									className="block cursor-pointer px-4 py-2 hover:bg-gray-100"
 								>
 									Male
@@ -47,7 +47,7 @@ const DropDown = () => {
 							</li>
 							<li>
 								<a
-									onClick={() => selectValue("female")}
+									onClick={() => selectValue("Female")}
 									className="block cursor-pointer px-4 py-2 hover:bg-gray-100"
 								>
 									Female

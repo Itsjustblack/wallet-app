@@ -1,5 +1,5 @@
 import Container from "@components/container";
-import DatePicker from "@components/container/datePicker";
+import DatePicker from "@components/datePicker";
 import DropDown from "@components/dropDown";
 import PageContainer from "@components/pageContainer";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const UpdateProfile = () => {
 							alt=""
 						/>
 					</Link>
-					<span className="text-sm mx-auto font-medium leading-5 pr-4">
+					<span className="text-sm mx-auto font-bold leading-5 pr-4">
 						Bio-Data
 					</span>
 				</header>
