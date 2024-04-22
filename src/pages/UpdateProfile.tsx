@@ -1,7 +1,7 @@
-import Container from "@components/container";
-import DatePicker from "@components/datePicker";
-import DropDown from "@components/dropDown";
-import PageContainer from "@components/pageContainer";
+import Container from "@/components/Container";
+import DatePicker from "@/components/DatePicker";
+import DropDown from "@/components/DropDown";
+import PageContainer from "@/components/PageContainer";
 import { Link } from "react-router-dom";
 
 const UpdateProfile = () => {

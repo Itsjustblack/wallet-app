@@ -1,5 +1,5 @@
-import Container from "@components/container";
-import PageContainer from "@components/pageContainer";
+import Container from "@/components/Container";
+import PageContainer from "@/components/PageContainer";
 import { Link } from "react-router-dom";
 
 const Profile = () => {

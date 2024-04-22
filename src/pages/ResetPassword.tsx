@@ -1,4 +1,4 @@
-import Container from "@components/container";
+import Container from "@/components/Container";
 import { Link } from "react-router-dom";
 
 const ResetPassword = () => {
@@ -32,7 +32,7 @@ const ResetPassword = () => {
 						Enter new password
 					</label>
 					<input
-						className="border border-[#898A8D] w-full rounded-xl h-[46px]"
+						className="border border-[#898A8D] w-full rounded-xl h-[46px] px-3"
 						name="new-password"
 						type="text"
 					/>
@@ -45,7 +45,7 @@ const ResetPassword = () => {
 						Re-enter new password
 					</label>
 					<input
-						className="border border-[#898A8D] w-full rounded-xl h-[46px]"
+						className="border border-[#898A8D] w-full rounded-xl h-[46px] px-3"
 						name="re-enter-password"
 						type="text"
 					/>

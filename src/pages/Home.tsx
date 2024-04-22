@@ -1,8 +1,8 @@
-import Container from "@components/container";
-import PageContainer from "@components/pageContainer";
-import Transactions from "@components/transactions";
+import Container from "@/components/Container";
+import PageContainer from "@/components/PageContainer";
+import Transactions from "@/components/Transactions";
 import { Link } from "react-router-dom";
-import MobileNav from "@components/nav/mobile-nav";
+import MobileNav from "@/components/nav/MobileNav";
 import classNames from "classnames";
 import { useMobileMenuStore } from "@store/mobileMenu";
 

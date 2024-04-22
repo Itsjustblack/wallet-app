@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useMobileMenuStore } from "../../../store/mobileMenu";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -5,7 +6,7 @@ const MobileNav = () => {
 	const navItems = [
 		{
 			title: "Profile",
-			path: "/",
+			path: "/profile",
 		},
 		{
 			title: "Payments",
@@ -52,16 +53,18 @@ const MobileNav = () => {
 							</div>
 						</div>
 						<ul className="pl-5 mt-14 grid gap-y-6">
-							{navItems.map(({ title }) => (
-								<li
-									key={title}
-									className="flex gap-x-7 w-full py-3"
-								>
-									<img
-										src="/assets/icons/ecclipse.svg"
-										alt=""
-									/>
-									<span className="font-monda">{title}</span>
+							{navItems.map(({ title, path }) => (
+								<li key={title}>
+									<Link
+										className="flex gap-x-7 w-full py-3"
+										to={path}
+									>
+										<img
+											src="/assets/icons/ecclipse.svg"
+											alt=""
+										/>
+										<span className="font-monda">{title}</span>
+									</Link>
 								</li>
 							))}
 						</ul>

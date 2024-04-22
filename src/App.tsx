@@ -1,4 +1,3 @@
-import HoverNav from "@components/nav/hover-nav";
 import ForgotPassword from "@pages/ForgotPassword";
 import Home from "@pages/Home";
 import Login from "@pages/Login";
@@ -8,6 +7,7 @@ import SignUp from "@pages/SignUp";
 import UpdateProfile from "@pages/UpdateProfile";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
+import Cards from "./pages/Cards";
 
 const App = () => {
 	return (
@@ -42,9 +42,13 @@ const App = () => {
 						path="/update-profile"
 						element={<UpdateProfile />}
 					/>
+					<Route
+						path="/my-cards"
+						element={<Cards />}
+					/>
 				</Routes>
 			</AnimatePresence>
-			<HoverNav />
+			{/* <HoverNav /> */}
 		</>
 	);
 };

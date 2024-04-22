@@ -1,4 +1,4 @@
-import Container from "@components/container";
+import Container from "@/components/Container";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
@@ -19,7 +19,7 @@ const SignUp = () => {
 						Name
 					</label>
 					<input
-						className="border border-[#898A8D] w-full rounded-xl h-[46px]"
+						className="border border-[#898A8D] w-full rounded-xl h-[46px] px-3"
 						name="username"
 						type="text"
 					/>
@@ -32,7 +32,7 @@ const SignUp = () => {
 						Email Address
 					</label>
 					<input
-						className="border border-[#898A8D] w-full rounded-xl h-[46px]"
+						className="border border-[#898A8D] w-full rounded-xl h-[46px] px-3"
 						name="email-address"
 						type="email"
 					/>
@@ -45,7 +45,7 @@ const SignUp = () => {
 						Password
 					</label>
 					<input
-						className="border border-[#898A8D] w-full rounded-xl h-[46px]"
+						className="border border-[#898A8D] w-full rounded-xl h-[46px] px-3"
 						name="password"
 						type="text"
 					/>
