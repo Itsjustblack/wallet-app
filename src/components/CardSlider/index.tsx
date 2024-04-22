@@ -5,7 +5,7 @@ import { useState } from "react";
 const cards = Array.from({ length: 6 });
 
 const CardSlider = () => {
-	const [dragging, setDragging] = useState(false);
+	// const [dragging, setDragging] = useState(false);
 	const [cardIndex, setCardIndex] = useState(1);
 
 	const DRAG_BUFFER = 50;
@@ -13,12 +13,12 @@ const CardSlider = () => {
 	const dragX = useMotionValue(0);
 
 	const onDragStart = () => {
-		setDragging(true);
-		console.log(dragging);
+		// setDragging(true);
+		// console.log(dragging);
 	};
 
 	const onDragEnd = () => {
-		setDragging(false);
+		// setDragging(false);
 
 		const x = dragX.get();
 		console.log(x);
