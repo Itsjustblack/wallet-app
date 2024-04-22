@@ -1,13 +1,13 @@
-import ForgotPassword from "@pages/ForgotPassword";
+import { AnimatePresence } from "framer-motion";
+import { Route, Routes } from "react-router-dom";
 import Home from "@pages/Home";
+import Cards from "@pages/Cards";
+import ForgotPassword from "@pages/ForgotPassword";
 import Login from "@pages/Login";
 import Profile from "@pages/Profile";
 import ResetPassword from "@pages/ResetPassword";
 import SignUp from "@pages/SignUp";
 import UpdateProfile from "@pages/UpdateProfile";
-import { AnimatePresence } from "framer-motion";
-import { Route, Routes } from "react-router-dom";
-import Cards from "./pages/Cards";
 
 const App = () => {
 	return (
